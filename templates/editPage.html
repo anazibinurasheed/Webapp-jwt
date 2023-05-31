@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <style>  #myForm3{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        z-index: 9999;
+        width: 30%;
+        height: 30%;
+    }
+</style>
+</head>
+<body>
+
+    
+    <form method="post" action="/admin/edit_user" id="myForm3" >
+        <input type="text" class="form-control" name="Username" value="{{.Username}}" placeholder="Enter new username ">
+        <br>
+        <input type="email" class="form-control" name="Email" value="{{.Email}}" placeholder="Enter new email adrress">
+
+        <br>
+        <input id="password-field" type="password" name="Password" class="form-control"
+            placeholder="Password">
+
+        <br>
+        <button type="submit" class="form-control btn btn-primary submit px-3">Apply</button>
+    </form>
+
+
+</body>
+</html>
